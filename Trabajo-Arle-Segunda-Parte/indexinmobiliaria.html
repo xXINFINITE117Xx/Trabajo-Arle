@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Comision inmobiliaria</title>
+</head>
+<body>
+    <h1>Calculadora de Comision inmobiliaria</h1>
+    <label for="costo-casa">Costo de la casa:</label>
+    <input type="number" id="costo-casa">
+    <label for="tipo-mueble">Tipo de mueble:</label>
+    <select id="tipo-mueble">
+        <option value="Usado">Usado</option>
+        <option value="Nuevo">Nuevo</option>
+    </select>
+    <button onclick="calcularComision()">calcular Comision</button>
+    <div id="resultado" style="display: none;">
+        <h2>Resultados:</h2>
+        <p>Valor recibido por el propietario: <span id="valor-propietario"></span></p>
+        <p>Valor recibido por la inmobiliaria: <span id="valor-inmobiliaria"></span></p>
+    </div>   
+    <script src="ejercicio3.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>"Lavan Ya" - Servicio de Limpieza</title>
+</head>
+<body>
+  <h1>"Lavan Ya" - Servicio de Limpieza</h1>
+  <div id="app">
+    <label for="service">Seleccione el servicio:</label>
+    <select id="service">
+      <option value="lavado">Lavado</option>
+      <option value="planchado">Planchado</option>
+    </select>
+    <div id="lavado-options">
+      <label for="lavadoType">Tipo de lavado:</label>
+      <select id="lavadoType">
+        <option value="seco">Lavado en seco</option>
+        <option value="normal">Lavado normal</option>
+      </select>
+    </div>
+    <label for="cantidadPrendas">Cantidad de prendas:</label>
+    <input type="number" id="cantidadPrendas" min="1" step="1">
+    <button onclick="calcularCosto()">Calcular Costo</button>
+    <div id="resultado"></div>
+  </div>
+  <script src="ejercicio4.js"></script>
+</body>
+</html>

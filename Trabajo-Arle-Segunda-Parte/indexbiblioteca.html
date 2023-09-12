@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Municipal De Armenia</title>
+</head>
+<body>
+    <h1>Biblioteca Municipal De Armenia</h1>
+    <label for="tipo-multa">Tipo de multa:</label>
+    <select id="tipo-multa">
+        <option value="devolucion">Devolución</option>
+        <option value="perdida">Pérdida</option>
+    </select>
+    <br>
+    <label for="dias-retraso">Cantidad de días de retraso:</label>
+    <input type="number" id="dias-retraso">
+    <br>
+    <label for="cantidad-libros">Cantidad de libros prestados:</label>
+    <input type="number" id="cantidad-libros">
+    <br>
+    <label for="cantidad-revistas">Cantidad de revistas prestadas:</label>
+    <input type="number" id="cantidad-revistas">
+    <br>
+    <button onclick="calcularMulta()">Calcular Multa</button>
+    <br>
+    <p id="result"></p>
+
+    <script src="ejercicio7.js"></script>
+</body>
+</html>

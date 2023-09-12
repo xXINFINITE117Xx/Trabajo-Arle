@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italiana Pizza</title>
+</head>
+<body>
+    <h1>Italiana Pizza</h1>
+    <label for="product">Selecciona un producto:</label>
+    <select id="product">
+        <option value="pizza">1. Pizza</option>
+        <option value="sandwich">2. Sándwiches</option>
+        <option value="ensalada">3. Ensaladas</option>
+    </select>
+    <br>
+    <label for="quantity">Cantidad de porciones:</label>
+    <input type="number" id="quantity">
+    <br>
+    <label for="salsa">¿Desea agregar salsa? (+$3000)</label>
+    <input type="checkbox" id="salsa">
+    <br>
+    <button onclick="calcularCosto()">Calcular Costo</button>
+    <br>
+    <p id="result"></p>
+
+    <script src="ejercicio6.js"></script>
+</body>
+</html>
