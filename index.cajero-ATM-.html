@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automático</title>
+</head>
+<body>
+    <h1>Cajero Automático</h1>
+
+    <div id="interfazCliente">
+        <label for="documento">Documento de Identidad:</label>
+        <input type="text" id="documento"><br>
+        <label for="pin">PIN (4 dígitos):</label>
+        <input type="password" id="pin"><br>
+        <button onclick="iniciarSesion()">Iniciar Sesión</button>
+    </div>
+
+    <div id="menuOperaciones" style="display:none;">
+        <h2>Menú de Operaciones</h2>
+        <button onclick="realizarRetiro()">Realizar Retiro</button><br>
+        <button onclick="realizarDeposito()">Realizar Depósito</button><br>
+        <button onclick="realizarTransferencia()">Realizar Transferencia</button><br>
+        <button onclick="consultarSaldo()">Consultar Saldo</button><br>
+        <button onclick="finalizarSesion()">Finalizar Sesión</button>
+    </div>
+
+    <div id="resultadoTransaccion"></div>
+
+    <div id="panelOperador" style="display:none;">
+        <h2>Panel de Operador</h2>
+        <label for="interruptor">Interruptor:</label>
+        <input type="checkbox" id="interruptor" onchange="cambiarEstadoCajero()">
+    </div>
+
+    <script src="cajero-ATM-.js"></script>
+</body>
+</html>

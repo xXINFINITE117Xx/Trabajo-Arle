@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atención en la Universidad</title>
+    <script src="estadistica-de-atencion.js"></script>
+</head>
+<body>
+    <h1>Estadísticas de Atención en la Universidad</h1>
+
+    <button onclick="registrarAtencion('terminal', 'estudiante')">Atender Estudiante (Terminal)</button>
+    <button onclick="registrarAtencion('terminal', 'docente')">Atender Docente (Terminal)</button>
+    <button onclick="registrarAtencion('oficina', 'estudiante')">Atender Estudiante (Oficina)</button>
+    <button onclick="registrarAtencion('oficina', 'docente')">Atender Docente (Oficina)</button>
+    <button onclick="trasferirAtencion()">Transferir Atención</button>
+
+    <h2>Estadísticas Generales</h2>
+    <p>Total de usuarios atendidos: <span id="totalUsuarios">0</span></p>
+
+    <h2>Estadísticas por Módulo</h2>
+    <p>Terminal:
+        <br>Estudiantes atendidos: <span id="terminalEstudiantes">0</span>
+        <br>Docentes atendidos: <span id="terminalDocentes">0</span>
+    </p>
+    <p>Oficina:
+        <br>Estudiantes atendidos: <span id="oficinaEstudiantes">0</span>
+        <br>Docentes atendidos: <span id="oficinaDocentes">0</span>
+    </p>
+
+    <h2>Estadísticas de Transferencia</h2>
+    <p>De Terminal a Oficina: <span id="transferenciaTerminalToOficina">0</span></p>
+    <p>De Oficina a Terminal: <span id="transferenciaOficinaToTerminal">0</span></p>
+</body>
+</html>

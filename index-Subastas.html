@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subastas</title>
+</head>
+<body>
+    <h1>Subastas</h1>
+
+    <div>
+        <h2>Registrar Producto</h2>
+        <label for="productoId">ID:</label>
+        <input type="text" id="productoId"><br>
+        <label for="productoNombre">Nombre:</label>
+        <input type="text" id="productoNombre"><br>
+        <label for="productoFecha">Fecha:</label>
+        <input type="date" id="productoFecha"><br>
+        <label for="productoPrecio">Precio Inicial:</label>
+        <input type="number" id="productoPrecio"><br>
+        <button onclick="registrarProducto()">Registrar</button>
+    </div>
+
+    <div>
+        <h2>Pujar por Producto</h2>
+        <label for="pujaProducto">Producto:</label>
+        <select id="pujaProducto"></select><br>
+        <label for="pujaFecha">Fecha:</label>
+        <input type="date" id="pujaFecha"><br>
+        <label for="pujaMonto">Monto:</label>
+        <input type="number" id="pujaMonto"><br>
+        <button onclick="realizarPuja()">Pujar</button>
+    </div>
+
+    <div>
+        <h2>Productos Registrados</h2>
+        <ul id="listaProductos"></ul>
+    </div>
+
+    <div>
+        <h2>Ofertas por Producto</h2>
+        <select id="ofertaProducto" onchange="mostrarOfertas()">
+        </select>
+        <ul id="listaOfertas"></ul>
+    </div>
+
+    <div>
+        <h2>Oferta Ganadora</h2>
+        <div id="ofertaGanadora"></div>
+    </div>
+
+    <script src="Subastas.js"></script>
+</body>
+</html>
